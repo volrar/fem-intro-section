@@ -1,0 +1,52 @@
+
+.hero-container {
+    display: flex;
+    font-family: 'Epilogue', serif;
+}
+
+.hero-content-container {
+    width: 50%;
+}
+
+.hero-content {
+    padding: 10%;
+    width: 100%;
+    margin: 20% auto;
+}
+
+.hero-content > p {
+    margin: 1rem 0;
+    font-size: calc(18px + .25vw);
+    color: hsl(0, 0%, 41%);
+    width: 90%;
+}
+
+.hero-content > h2 {
+    font-size: calc(2rem + 1.5vw);
+}
+
+.hero-image-container {
+    width: 50%;
+}
+
+.client-image {
+    width: 15%;
+    margin: 1rem auto;
+}
+
+@media (max-width: 991px) {
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        padding: 5%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .hero-content > p {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}

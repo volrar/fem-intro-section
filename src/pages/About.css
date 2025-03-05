@@ -1,0 +1,96 @@
+.about-content {
+    font-family: 'Epilogue', serif;
+    font-size: calc(18px);
+    margin: 1rem auto;
+}
+
+.rw-content-container > h3 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+.rw-content-container > p {
+    font-size: calc(18px);
+    padding: 1rem;
+}
+
+.test {
+    padding: 1rem;
+}
+
+.remote-image {
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.rw-content-container {
+    margin: auto;
+}
+
+.about-content-container {
+    margin: 2rem auto;
+    padding: .5rem;
+}
+
+.about-content-container > h3 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+.about-content-container > p {
+    font-size: calc(18px);
+    padding: 1rem;
+}
+
+.people-container > h3{
+    font-size: calc(1.5rem + 1vw);
+}
+
+.people-container  {
+    font-size: calc(18px);
+}
+
+.people-container > p {
+    font-size: calc(18px);
+    padding: 1rem;
+}
+
+.people-image {
+    border-radius: 1rem;
+}
+
+.about-image {
+    border-radius: 1rem;
+}
+
+.about-careers-content {
+    margin: auto;
+}
+
+.about-careers-content > h3{
+    font-size: calc(1.5rem + 1vw);
+}
+
+.about-careers-content > p {
+    font-size: calc(18px);
+    padding: 1rem;
+}
+
+.offer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-text {
+    align-content: flex-end;
+    color: white;
+}
+
+.card-hover-effect {
+    transform: translateY(0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
