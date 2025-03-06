@@ -1,0 +1,97 @@
+.employee-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition-duration: 1s;
+}
+
+.employee-card {
+    width: 325px;
+    min-height: 325px;
+    margin: 1rem auto;
+}
+
+.employee-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.employee-card-text > p {
+    color: white;
+}
+
+.employee-card-text > h4 {
+    color: white;
+}
+
+.behind-container > h3 {
+    font-size: calc(1rem + 1.5vw);
+}
+
+.behind-container > p {
+    font-size: 18px;
+    padding: 1rem;
+}
+
+
+.behind-image {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+  .culture-container {
+    margin: 1rem auto;
+}
+
+
+@media (max-width: 991px) {
+
+    .behind-hero {
+        flex-direction: column-reverse;
+    }
+
+    .part {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .behind-image {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .test {
+        min-width: 350px;
+    }
+
+    .test > p {
+        width: 100%;
+    }
+
+    .offer-card {
+        max-width: 250px;
+        margin: auto;
+    }
+} 
+
+@media (min-width: 1100px) {
+    .behind-container > h3 {
+        font-size: calc(3rem);
+    }
+
+    .culture-container > h3{
+        font-size: calc(3rem)
+    }
+
+    .test > h5 {
+        font-size: calc(3rem);
+    }
+
+    .team-container > h3 {
+        margin: 2rem auto;
+        font-size: calc(3rem);
+    }
+
+}

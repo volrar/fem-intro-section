@@ -6,7 +6,7 @@ import people from '../assets/images/people.jpg';
 import aboutCareers from '../assets/images/careers.jpg';
 import seamless from '../assets/images/seamless-collaboration.jpg';
 import efficiency from '../assets/images/efficiency.jpg';
-import secure from '../assets/images/people.jpg';
+import secure from '../assets/images/secure.jpg';
 import friendly from '../assets/images/friendly.jpg';
 import './About.css'
 
@@ -29,7 +29,7 @@ function About() {
             },
             {
                 id:3,
-                image: people,
+                image: secure,
                 title: 'Secure & Scalable Solutions',
                 description: 'Work with confidence, backed by enterprise-grade security.'
             },
@@ -53,9 +53,9 @@ function About() {
 
         <Container>
 
-            <article className='d-flex'>
+            <article className='rw-container'>
 
-                <Image src={remoteWork} alt='remote-work' className='remote-image'/>
+                <Image src={remoteWork} alt='remote-work' className='about-image' fluid/>
 
                 <Stack className='rw-content-container p-2'>
 
@@ -71,26 +71,25 @@ function About() {
 
                 </Stack>
 
-            </article>        
+            </article>     
+
+            <p className='p-4'>
+                We see a future where distance is no longer a barrier to success. As remote and hybrid work continue to evolve, we're committed to building solutions that foster
+                seamless collaboration, deeper engagement, and better work-life balance. Snap is designed to help teams thrive in a digital workspace, providing the structure
+                and flexibility they need to do their best work - wherever they are.
+            </p>   
 
         </Container>
 
-        <p className='test'>
-            We see a future where distance is no longer a barrier to success. As remote and hybrid work continue to evolve, we're committed to building solutions that foster
-             seamless collaboration, deeper engagement, and better work-life balance. Snap is designed to help teams thrive in a digital workspace, providing the structure
-            and flexibility they need to do their best work - wherever they are.
-        </p>
-
-
-            <article className='about-content-container'>
+            <article className='about-content-container flex-column'>
 
                 <h3>What We Offer</h3>
 
                 <Container className='offer-container'>
                     {work.map((work, index) => {
                     return (
-                            <Card style={{padding: `1rem`, border: `none`, width: `300px`}}>
-                            <Card.Body className='d-flex card-hover-effect' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(${work.image})`, backgroundRepeat: `no-repeat`, backgroundSize: `cover`, backgroundPosition: `center`, minHeight: `300px`,  borderRadius: `1rem` }}>
+                            <Card className='offer-card-container' style={{border: `none`}}>
+                            <Card.Body className='d-flex card-hover-effect offer-card' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(${work.image})`}}>
                                 <Container className='card-text'>
                                     <Card.Title>{work.title}</Card.Title>
                                     <Card.Text>{work.description}</Card.Text>
@@ -101,11 +100,9 @@ function About() {
                     })}
                 </Container>
 
-                
-
             </article>
         
-        <article className='about-content-container d-flex'>
+        <article className='about-content-container'>
 
             <Container className='people-container'>
 
@@ -119,22 +116,23 @@ function About() {
 
             <Container>
 
-                 <Image src={people} alt='people' className='people-image'/>
+                 <Image src={people} alt='people' className='about-image' fluid/>
 
             </Container>
              
         </article>
 
        
-        <article className='about-content-container d-flex'>
+        <article className='about-content-container'>
 
             <Container>
 
-                <Image src={aboutCareers} alt='about-careers.jpg' className='about-image' />
+                <Image src={aboutCareers} alt='about-careers.jpg' className='about-image' fluid/>
 
             </Container>
 
             <Container className='about-careers-content'>
+
                 <h3>Join the Future of Work</h3>
 
                 <p>Snap isn't just a tool - It's  movement towards a more connected, flexible, and productive workplace. Whether you're a team of two or a company of thousands,
@@ -143,7 +141,7 @@ function About() {
 
                 <p>Let's make remote work effortless - Together.</p>
 
-                <Button variant="dark" type='button' className='w-25' href='/Careers'>Careers</Button>
+                <Button variant="dark" type='button' href='/Careers'>Careers</Button>
 
             </Container>
 

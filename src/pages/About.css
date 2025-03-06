@@ -1,60 +1,58 @@
+
+
 .about-content {
     font-family: 'Epilogue', serif;
-    font-size: calc(18px);
-    margin: 1rem auto;
+    font-size: calc(14px + .25vw);
+    margin: 2rem auto;
+    transition-duration: 1.2s;
 }
 
-.rw-content-container > h3 {
+
+.about-content-container {
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: .5rem;
+    display: flex;
+}
+
+.about-content-container > h3 {
+    font-family: 'Epilogue', serif;
     font-size: calc(1.5rem + 1vw);
+    transition-duration: 1.2s;
 }
 
-.rw-content-container > p {
-    font-size: calc(18px);
-    padding: 1rem;
-}
-
-.test {
-    padding: 1rem;
-}
-
-.remote-image {
-    border-radius: 1rem;
-    margin: 2rem;
+.rw-container {
+    display: flex;
 }
 
 .rw-content-container {
     margin: auto;
 }
 
-.about-content-container {
-    margin: 2rem auto;
-    padding: .5rem;
-}
-
-.about-content-container > h3 {
+.rw-content-container > h3 {
     font-size: calc(1.5rem + 1vw);
+    transition-duration: 1.2s;
 }
 
-.about-content-container > p {
-    font-size: calc(18px);
+.rw-content-container > p {
+    font-size: calc(14px + .25vw);
     padding: 1rem;
+    transition-duration: 1.2s;
+}
+
+.about-image:first-of-type {
+    margin: auto;
+    border: 2rem solid transparent;
+    max-height: 530px;
 }
 
 .people-container > h3{
     font-size: calc(1.5rem + 1vw);
 }
 
-.people-container  {
-    font-size: calc(18px);
-}
-
 .people-container > p {
     font-size: calc(18px);
     padding: 1rem;
-}
-
-.people-image {
-    border-radius: 1rem;
 }
 
 .about-image {
@@ -87,10 +85,47 @@
 
 .card-hover-effect {
     transform: translateY(0);
+    transition-duration: 1s;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-hover-effect:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
 }
+
+.offer-card-container {
+    padding: 1rem;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.offer-card {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 300px;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .rw-container {
+        display: block;
+    }
+
+    .about-image:first-of-type {
+        margin: 2rem;
+        width: 90%;
+    }
+
+    .about-content-container {
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+    }
+
+    .about-content-container:last-of-type{
+        flex-direction: column;
+    }
+    
+}
+

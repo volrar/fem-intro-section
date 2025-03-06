@@ -6,7 +6,7 @@ import Home from './pages/Home';
 // import Reminders from '../pages/Reminders';
 // import Planning from '../pages/Planning';
 // import CompanyHistory from '../pages/CompanyHistory';
-// import OurTeam from '../pages/OurTeam';
+import OurTeam from './pages/OurTeam';
 // import Blog from '../pages/Blog';
 // import Careers from '../pages/Careers';
 import About from './pages/About';
@@ -24,7 +24,7 @@ const App = () => {
                 {/* <Route path="/features/reminder" element={<Reminders />} /> */}
                 {/* <Route path="/features/planning" element={<Planning />} /> */}
                 {/* <Route path="/company/history" element={<CompanyHistory />} /> */}
-                {/* <Route path="/company/our-team" element={<OurTeam />} /> */}
+                <Route path="/company/our-team" element={<OurTeam />} />
                 {/* <Route path="/company/blog" element={<Blog />} /> */}
                 {/* <Route path="/careers" element={<Careers />} /> */}
                 <Route path="/about" element={<About />} />
